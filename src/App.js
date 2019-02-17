@@ -5,20 +5,26 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 // Bootstrap
+import Container from 'react-bootstrap/Container';
 
 // My components
-import Knowledge from './components/Knowledge';
-import Container from 'react-bootstrap/Container';
+import Header from './components/Header';
 import MainSlider from './components/MainSlider';
+import Knowledge from './components/Knowledge';
+import FeaturedList from './components/FeaturedList';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
     return (
       <>
+        <Header/>
         <MainSlider/>
         <Container>
           <Knowledge/>
+          <FeaturedList/>
         </Container>
+        <Footer/>
       </>
     );
   }

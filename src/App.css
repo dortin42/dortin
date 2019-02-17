@@ -1,6 +1,14 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+.row {
+  margin-top: 2em;
+}
+
+.slider-imgs {
+  width: 100%;
+}
+
 .logo {
-  width: 10em;
+  width: 100%;
 }

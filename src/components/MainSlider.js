@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 // React Slick Slider
 import Slider from "react-slick";
 
+// Img
+import VimMasterRace from "../assets/img/vim_master_race.png";
+
 class MainSlider extends Component {
   render() {
     var settings = {
@@ -15,22 +18,10 @@ class MainSlider extends Component {
     return (
       <Slider {...settings}>
         <div>
-          <h3>1</h3>
+          <img src={VimMasterRace} className='slider-imgs' alt="Vim Master Race"/>
         </div>
         <div>
           <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
         </div>
       </Slider>
     );

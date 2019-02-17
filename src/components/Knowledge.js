@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 // Bootstrap
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
 
 // Img
 import ansible from '../assets/img/logos/ansible.png';
@@ -17,6 +15,8 @@ import docker from '../assets/img/logos/docker.png';
 import git from '../assets/img/logos/git.png';
 import node from '../assets/img/logos/node.png';
 import vim from '../assets/img/logos/vim.png';
+import react from '../assets/img/logos/react.png';
+import ruby from '../assets/img/logos/ruby.png';
 
 import Item from './Item';
 
@@ -25,54 +25,41 @@ class Knowledge extends Component {
     return (
       <>
         <Row>
-          <Col>
-            <Item title='Daniel' logo={ansible}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={ansible}/>
           </Col>
-          <Col>
-            <Card>
-              <Card.Header>Social media</Card.Header>
-              <ListGroup variant="flush">
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-              </ListGroup>
-            </Card>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={bash}/>
           </Col>
-          <Col>
-            <Item title='ansible' logo={ansible}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={rspec}/>
           </Col>
-          <Col>
-            <Item title='bash' logo={bash}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={rails}/>
           </Col>
-        </Row>
-        <br/>
-        <Row>
-          <Col>
-            <Item title='rspec' logo={rspec}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={ruby}/>
           </Col>
-          <Col>
-            <Item title='rails' logo={rails}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={typescript}/>
           </Col>
-          <Col>
-            <Item title='typescript' logo={typescript}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={node}/>
           </Col>
-          <Col>
-            <Item title='node' logo={node}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={react}/>
           </Col>
-        </Row>
-        <br/>
-        <Row>
-          <Col>
-            <Item title='circleci' logo={circleci}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={circleci}/>
           </Col>
-          <Col>
-            <Item title='docker' logo={docker}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={docker}/>
           </Col>
-          <Col>
-            <Item title='git' logo={git}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={git}/>
           </Col>
-          <Col>
-            <Item title='vim' logo={vim}/>
+          <Col className='mt-4' xs={4} sm={2} md={1}>
+            <Item logo={vim}/>
           </Col>
         </Row>
       </>

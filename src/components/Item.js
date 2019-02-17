@@ -6,9 +6,6 @@ class Item extends Component {
     return (
       <Card className="bg-light">
         <Card.Img src={this.props.logo} alt="Card image" className='logo' />
-        <Card.Body>
-          <Card.Title>{this.props.title}</Card.Title>
-        </Card.Body>
       </Card>
     );
   }
